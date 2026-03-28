@@ -30,29 +30,26 @@
       <h2 class="text-lg font-semibold text-gray-800 mb-2">Data We Collect</h2>
       <ul class="list-disc list-inside space-y-2">
         <li>
-          <strong>Anonymous device identifier.</strong> On first launch, the App signs in anonymously via
-          Firebase Authentication. This generates a random user ID (not linked to your name, email, or
-          Apple ID) that persists on-device. It is used solely to track your Discovery Point balance and
-          subscription status.
+          <strong>Anonymous device identifier.</strong> On first launch, the App assigns you a random
+          user ID (not linked to your name, email, or Apple ID) that persists on-device. It is used
+          solely to track your Discovery Point balance and subscription status.
         </li>
         <li>
-          <strong>Usage quota data.</strong> We store your Discovery Point balance, subscription status,
-          and approximate token usage in Firebase Firestore, keyed to your anonymous ID.
+          <strong>Usage quota data.</strong> Your Discovery Point balance, subscription status, and
+          approximate usage are stored in a cloud database keyed to your anonymous ID.
         </li>
         <li>
           <strong>Feedback you submit.</strong> If you choose to send feedback through the App, your
-          message, anonymous user ID, app version, and submission timestamp are stored in Firestore.
-          Feedback is used only to improve the App.
+          message, anonymous user ID, app version, and submission timestamp are stored in our cloud
+          database. Feedback is used only to improve the App.
         </li>
         <li>
-          <strong>Menu images.</strong> When you scan a menu, the image is sent to Google's Gemini API
-          for analysis. Images are not stored by us. Google's data-use terms apply to data processed
-          through their API.
+          <strong>Menu images.</strong> When you scan a menu, the image is sent to a third-party AI
+          service for analysis. Images are not stored by us.
         </li>
         <li>
           <strong>Purchase information.</strong> In-app purchases are processed by Apple. We receive
-          only a StoreKit transaction receipt to verify your purchase; we do not receive your payment
-          details.
+          only a transaction receipt to verify your purchase; we do not receive your payment details.
         </li>
       </ul>
     </div>
@@ -69,17 +66,17 @@
 
     <div>
       <h2 class="text-lg font-semibold text-gray-800 mb-2">Third-Party Services</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li><strong>Firebase (Google)</strong> — Authentication and Firestore database. <a href="https://firebase.google.com/support/privacy" class="text-indigo-600 hover:underline">Firebase Privacy</a></li>
-        <li><strong>Google Gemini API</strong> — Menu image analysis and translation. <a href="https://ai.google.dev/gemini-api/terms" class="text-indigo-600 hover:underline">Gemini API Terms</a></li>
-        <li><strong>Apple StoreKit</strong> — In-app purchase processing. <a href="https://www.apple.com/legal/privacy/" class="text-indigo-600 hover:underline">Apple Privacy Policy</a></li>
-      </ul>
+      <p>
+        The App uses third-party services for anonymous authentication, cloud data storage, AI-powered
+        menu analysis, and in-app purchase processing. These services receive only the data necessary
+        to perform their function and are bound by their own privacy policies.
+      </p>
     </div>
 
     <div>
       <h2 class="text-lg font-semibold text-gray-800 mb-2">Data Retention</h2>
       <p>
-        Firestore quota and feedback records are retained indefinitely to maintain service continuity.
+        Quota and feedback records are retained indefinitely to maintain service continuity.
         You may request deletion of your data by contacting us at the address below.
       </p>
     </div>
