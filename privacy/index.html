@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Vivid Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-white shadow-sm">
+    <div class="max-w-3xl mx-auto px-6 py-10 text-center">
+      <a href="/" class="text-indigo-600 text-sm font-medium hover:underline">&larr; Back to Vivid Menu</a>
+      <h1 class="text-3xl font-bold text-gray-900 mt-4">Privacy Policy</h1>
+      <p class="text-sm text-gray-400 mt-2">Last updated: March 28, 2026</p>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-8 text-gray-600">
+
+    <div>
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">Overview</h2>
+      <p>
+        Vivid Menu: Beyond Translation ("the App") is operated by Gengcong Yang. This policy explains what
+        data we collect, how we use it, and your rights. We collect only what is necessary to operate the App.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">Data We Collect</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>
+          <strong>Anonymous device identifier.</strong> On first launch, the App signs in anonymously via
+          Firebase Authentication. This generates a random user ID (not linked to your name, email, or
+          Apple ID) that persists on-device. It is used solely to track your Discovery Point balance and
+          subscription status.
+        </li>
+        <li>
+          <strong>Usage quota data.</strong> We store your Discovery Point balance, subscription status,
+          and approximate token usage in Firebase Firestore, keyed to your anonymous ID.
+        </li>
+        <li>
+          <strong>Feedback you submit.</strong> If you choose to send feedback through the App, your
+          message, anonymous user ID, app version, and submission timestamp are stored in Firestore.
+          Feedback is used only to improve the App.
+        </li>
+        <li>
+          <strong>Menu images.</strong> When you scan a menu, the image is sent to Google's Gemini API
+          for analysis. Images are not stored by us. Google's data-use terms apply to data processed
+          through their API.
+        </li>
+        <li>
+          <strong>Purchase information.</strong> In-app purchases are processed by Apple. We receive
+          only a StoreKit transaction receipt to verify your purchase; we do not receive your payment
+          details.
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">Data We Do NOT Collect</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Your name, email address, or Apple ID</li>
+        <li>Your location</li>
+        <li>Any advertising or tracking identifiers</li>
+        <li>Any health or financial data</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">Third-Party Services</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><strong>Firebase (Google)</strong> — Authentication and Firestore database. <a href="https://firebase.google.com/support/privacy" class="text-indigo-600 hover:underline">Firebase Privacy</a></li>
+        <li><strong>Google Gemini API</strong> — Menu image analysis and translation. <a href="https://ai.google.dev/gemini-api/terms" class="text-indigo-600 hover:underline">Gemini API Terms</a></li>
+        <li><strong>Apple StoreKit</strong> — In-app purchase processing. <a href="https://www.apple.com/legal/privacy/" class="text-indigo-600 hover:underline">Apple Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">Data Retention</h2>
+      <p>
+        Firestore quota and feedback records are retained indefinitely to maintain service continuity.
+        You may request deletion of your data by contacting us at the address below.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">Children's Privacy</h2>
+      <p>
+        The App is not directed at children under 13. We do not knowingly collect personal data from
+        children. Because we use anonymous identifiers only, no data is linked to a child's identity.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">Changes to This Policy</h2>
+      <p>
+        If our practices change, we will update this page and revise the "Last updated" date. Continued
+        use of the App after changes constitutes acceptance of the revised policy.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">Contact</h2>
+      <p>
+        Questions or data deletion requests:
+        <a href="mailto:gcyang.dev@gmail.com" class="text-indigo-600 hover:underline font-medium">gcyang.dev@gmail.com</a>
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="border-t border-gray-200 mt-16">
+    <div class="max-w-3xl mx-auto px-6 py-8 text-center text-sm text-gray-400">
+      &copy; 2026 Vivid Menu. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
